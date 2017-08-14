@@ -5,8 +5,8 @@ console.log('It is ' + chalk.blue(moment().format("dddd, MMMM Do YYYY, h:mm:ss a
 console.log('It is the ' + chalk.magenta(moment().format("DDDo")) + ' day of the year.');
 
 let now = moment();
-let startOfDay = now.startOf('day'); // .startOfDay mutates now
-now = moment();  // so re-create now with the current time
+let startOfDay = moment();
+startOfDay.startOf('day'); // .startOfDay mutates now
 
 console.log('It is ' + chalk.cyan(now.diff(startOfDay, 'seconds')) + ' seconds into the day.');
 
