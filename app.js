@@ -2,7 +2,7 @@ let moment = require('moment');
 let chalk = require('chalk');
 
 console.log('It is ' + chalk.blue(moment().format("dddd, MMMM Do YYYY, h:mm:ss a")));
-console.log('It is the ' + chalk.bgMagenta(moment().format("DDDo")) + ' day of the year.');
+console.log('It is the ' + chalk.magenta(moment().format("DDDo")) + ' day of the year.');
 
 let now = moment();
 let startOfDay = now.startOf('day'); // .startOfDay mutates now
