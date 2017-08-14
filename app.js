@@ -7,5 +7,6 @@ let now = moment();
 // let startOfDay = now.startOf('day');
 // console.log('It is ' + (now.subtract(startOfDay)) + ' seconds into the day.');
 let dst = (now.isDST()) ? 'is' : 'is not'
-console.log('It ' + dst + ' during Daylight Savings Time.');
-console.log('It ' +  + ' not a leap year.');
+console.log('It ' + chalk.green(dst) + ' during Daylight Savings Time.');
+let leap = (now.isLeapYear()) ? 'is' : 'is not'
+console.log('It ' + leap + ' a leap year.');
